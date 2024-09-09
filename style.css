@@ -1,0 +1,679 @@
+ /*  section 1 styles */  
+ body{
+  background-color: #111/*f2f*/;
+  font-family: "Poetsen One", sans-serif;
+  height: 300vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+*{
+  scroll-behavior: smooth;
+}  
+nav { 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #111;
+  padding: 1rem 0;
+  /*  box-shadow: 0px 4px 2px -2px gray; */
+  border-bottom: solid 1px #fff;
+  width: 100%;
+}
+
+nav h1{
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+nav ul li{
+  display: inline;
+  position: relative;
+  margin-right: 2rem;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul li:before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background-color: cyan;
+  top: 1.5rem;
+  transition: 0.5s;
+}
+nav ul li:hover:before{
+  width: 100%;
+}
+
+nav ul li:hover a{
+  transition: 0.5s;
+  color: cyan;
+}
+.all{
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  margin-top: 1.5rem;
+}
+#text1{
+  color: #6F97BF; 
+  margin-left: 11.5rem;
+  margin-top: 5.5rem;
+  font-size: 22.5px;
+}
+#name{
+  color: #fff;
+  font-size: 3.7rem;
+  margin-left: 7.4rem;
+}
+i{
+  color: #fff;
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+#you{
+   margin-left: 14rem;
+}
+#button{
+  position: relative;
+  top: 3rem;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: solid #fff 1.5px;
+  padding: 10px;
+  margin-left: 13rem;
+  transition: 0.5s;
+}
+#button:hover{
+ background: #fff;
+ color: #111f2f;
+}
+#menu{
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 772px) {
+       .image{
+        display: none;
+       }
+}
+
+@media screen and (max-width: 587px) {
+   #allah-ailam{
+   display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   .content{
+      position: relative;
+      right: 70px;
+   }
+
+   #name{
+    font-size: 2.7rem;
+   }
+
+   #text1{
+    position: relative;
+    right: 10px;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   #button{
+    width: 50px;
+   }
+}
+
+/* Section 2 styles */
+#section2 {
+  overflow: hidden;
+  position: relative;
+  top: 13.5rem;
+  background-color: #5555;
+  width: 100%;
+  padding: 0 20px;
+  height: 280px;
+}
+
+#section2 h2 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#section2 p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #Fff;
+}
+
+#section2 #one,
+#section2 #two,
+#section2 #three {
+  margin-bottom: 1rem;
+  text-align: center; 
+}
+
+#section2 #one {
+  margin-top: 1rem;
+}
+
+#section2 #two {
+  margin-top: 0.5rem;
+}
+
+#section2 #three {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  #section2 {
+      padding: 0 10px;
+      top: 10rem;
+  }
+
+  #section2 h2 {
+      font-size: 1.5rem;
+  }
+
+  #section2 p {
+      font-size: 0.9rem;
+  }
+
+  #section2 #one,
+  #section2 #two,
+  #section2 #three {
+      margin-left: 0;
+      margin-right: 0; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #section2 {
+      top: 7rem;
+  }
+
+  #section2 h2 {
+      font-size: 1.2rem;
+  }
+
+  #section2 p {
+      font-size: 0.8rem;
+  }
+}
+
+
+/* section 3 styles */
+.section3{
+position: relative;
+top: 17rem;
+}
+.section3 #title7{
+letter-spacing: 10px;
+color: #fff;
+}
+.game{
+position: relative;
+top: 2rem;
+left: 7rem;
+margin: 10px;
+background-color: #fff;
+border: solid 1px #fff;
+border-radius: 10px;
+width: 400px;
+height: 414.141px;
+display: inline-block;
+margin-top: 1rem;
+margin-left: 0;
+}
+
+@media screen and (max-width: 545px) {
+   .game{
+    left: 2rem;
+   }
+}
+
+@media screen and (max-width: 470px) {
+  .game{
+     width: 350px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .game{
+     width: 300px;
+     height: 420px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .game{
+     width: 250px;
+     height: 450px;
+  }
+}
+
+.game img{
+width: 100%;
+height: 66%;
+border-radius: 10px;
+}
+#discription-1{
+position: relative;
+left: 1rem;
+color: #111;
+}
+#name-1{
+position: relative;
+left: 2rem;
+top: 10px;
+}
+.buttons{
+display: flex;
+justify-content: space-between;
+}
+#visit-button{
+position: relative;
+top: 2rem;
+right: 1rem;
+color: green;
+text-decoration: none;
+font-size: larger;
+cursor: pointer;
+}
+
+/* Section 4 styles */
+
+.section4 {
+  background-color: #222;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.section4 h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #555;
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section4 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Section5 */
+
+.section5{
+  position: relative;
+  top: 250px;
+  height: 50vh;
+  width: 100%;
+}
+
+.section5 #title-of-ser{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  top: 10px;
+}
+
+.section5 .services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85.5%;
+  width: 100%;
+}
+
+.section5 .services .service{
+  background-color: #555;
+  width: 280px;
+  height: 290px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.section5 .services .service .service-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 5px;
+     margin-right: 15px;
+}
+
+.section5 .services .service .service-header i{
+   background-color: #007bff;
+   border-radius: 10px;
+   padding: 5px;
+}
+
+.section5 .services .service .service-title p{
+  font-family: sans-serif;
+  color: lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+  top: 15px;
+  left: 8px;
+}
+
+.section5 .services .service .service-title a{
+   position: relative;
+   top: 50px;
+   left: 13px;
+   color: lightgray;
+   text-decoration: none;
+}
+
+.service:hover{
+  border: solid 2px #fff;
+}
+
+@media screen and (max-width: 875px) {
+  .section5 .services{
+    flex-direction: column;
+  }
+
+  .section5 .services .service{
+    margin-top: 10px;
+  }
+
+  .section5{
+    height: 100vh;
+  }
+
+  .section5 .services .service .service-title a{
+    top: 15px;
+    left: 13px;
+ }
+
+}
+
+/* Section 6 styles (footer) */
+
+/* Footer Styling */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-links ul,
+.footer-payment ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links h3,
+.footer-payment h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul li,
+.footer-payment ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-payment ul li img,
+.footer-social ul li img {
+  width: 30px;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer a:hover {
+  color: #f5a623;
+}
+
+
+
+/* other */
+
+::selection{
+background-color: red;
+}
+
+#abdc{
+animation-name: adam;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+}
+
+@keyframes adam{
+0%{
+color: #111;
+}
+10%{
+color: darkblue;
+}
+35%{
+color: green;
+}
+50%{
+color: red;
+}
+75%{
+color: #1f4974;
+}
+100%{
+color: #111;
+}
+}
+
+.mobile-nav{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #111f2f;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: none;
+transition: 1s;
+}
+.mobile-nav ul li{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #1f4974;
+width: 86rem;
+height: 50px;
+list-style: none;
+}
+.mobile-nav ul li a{
+color: #fff;
+text-decoration: none;
+}
+.game:hover{
+cursor: pointer;
+}
+.game{
+border: solid #fff 2px;
+
+}
+.game:hover{
+animation-name: border;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+@keyframes border {
+0%{
+border-color: #555;
+}
+25%{
+border-color: green;
+}
+50%{
+border-color: blue;
+}
+75%{
+border-color: yellow;
+}
+100%{
+border-color: #555;
+}
+}
+
+#js-icon{
+position: relative;
+right: 10rem;
+top: 10rem;
+font-size: 10rem;
+color: #fff;
+}
+
+
+
+@media screen and (max-width: 1115px){
+#ct-img{
+display: none;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+.game{
+position: relative;
+right: 1110px;
+}
+}
