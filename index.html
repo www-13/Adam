@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Abed</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ADAM ABED</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" onclick="toggleTheme()"><i class='bx bx-moon'></i> Theme</button>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></button>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="three-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-subtitle">Full Stack Developer</div>
+            <h1>ADAM ABED</h1>
+            <p class="hero-description">
+                Crafting innovative digital experiences through clean code and creative design. 
+                Specializing in modern web technologies and passionate about building scalable applications.
+            </p>
+            <p class="hero-tagline">"Turning ideas into reality, one line of code at a time"</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn-hero btn-primary">View My Work</a>
+                <a href="#contact" class="btn-hero btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+                        <div class="hero-scroll"><i class='bx bx-down-arrow-alt'></i></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-subtitle">Get To Know Me</div>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <div class="about-image-bg"></div>
+                    <img src="images/adam image.jpeg" alt="Adam Abed" class="about-image">
+                </div>
+                <div class="about-content">
+                    <h3>Hi, I'm Adam Abed</h3>
+                    <p>
+                        I'm a passionate full-stack developer with a deep love for creating elegant solutions to complex problems. 
+                        With expertise spanning both frontend and backend development, I bring a holistic approach to every project I undertake.
+                    </p>
+                    <p>
+                        My journey in web development started with a curiosity about how things work on the internet, and it has 
+                        evolved into a professional career where I continuously push the boundaries of what's possible with modern 
+                        web technologies. I specialize in the MERN stack and have a keen eye for design and user experience.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
+                        or sharing my knowledge with the developer community. I believe in writing clean, maintainable code 
+                        and creating applications that not only work flawlessly but also provide exceptional user experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-subtitle">What I Do</div>
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-description">
+                    A comprehensive toolkit of modern technologies and frameworks that I use to bring your ideas to life
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bx-code-alt skill-icon'></i>
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Bootstrap</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-server skill-icon'></i>
+                    <h3>Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>EJS</li>
+                        <li>JavaScript</li>
+                        <li>MERN Stack</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bx-git-branch skill-icon'></i>
+                    <h3>Other Technologies</h3>
+                    <ul class="skill-list">
+                        <li>GitHub</li>
+                        <li>Render</li>
+                        <li>Netlify</li>
+                        <li>Vercel</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-subtitle">My Work</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of my recent work, from complex full-stack applications to elegant frontend solutions
+                </p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('big')">Major Projects</button>
+                <button class="filter-btn" onclick="filterProjects('small')">Small Projects</button>
+            </div>
+            <div class="project-showcase" id="project-showcase"></div>
+            <div class="project-navigation">
+                <button class="nav-btn" id="prev-btn" onclick="previousProject()">← Previous</button>
+                <button class="nav-btn" id="next-btn" onclick="nextProject()">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-subtitle">Let's Connect</div>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have a project in mind or just want to chat? I'd love to hear from you!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <h3>Let's work together</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bx-envelope contact-icon'></i>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <a href="mailto:adamprog13@gmail.com">adamprog13@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-phone contact-icon'></i>
+                            <div class="contact-item-content">
+                                <h4>Phone</h4>
+                                <a href="tel:+8618263793116">+86 18263793116</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-map contact-icon'></i>
+                            <div class="contact-item-content">
+                                <h4>Location</h4>
+                                <a href="#">Shandong, China</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/www-13" target="_blank" class="social-link"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/@adamabed2013" target="_blank" class="social-link"><i style="font-size: x-large;" class='bx bxl-youtube'></i></a>
+                        <a href="https://wa.link/e3ezdq" target="_blank" class="social-link"><i style="font-size: x-large;" class='bx bxl-whatsapp' ></i></a>
+                        <a href="mailto:adamprog13@gmail.com" target="_blank" class="social-link"><i style="font-size: x-large;" class='bx bxl-gmail'></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xyyrrnzd"
+                method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-hero btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Adam Abed</h3>
+                <p>Full Stack Developer specializing in creating exceptional digital experiences. Passionate about clean code, modern design, and innovative solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect info</h3>
+                <li>📧 adamprog13@gmail.com</li>
+                <li>📱 +86 18263793116</li>
+                <li>📍 china, shandong</li>
+                <li>From Egypt, Assuit</li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Adam Abed. All rights reserved. Designed & Developed with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
